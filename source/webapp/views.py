@@ -1,14 +1,16 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from webapp.models import Product
-from webapp.forms import ProductForm
+from webapp.forms import ProductForm, SearchProduct
 
 # Create your views here.
 
 
 def list_product(request, *args, **kwargs):
     products = Product.objects.order_by('category', 'name').filter(count__gt=0)
+    search = SearchProduct()
     return render(request, 'index.html', context={
-        'products': products
+        'products': products,
+        'search' : search
     })
 
 
@@ -82,3 +84,13 @@ def product_delete(request, pk):
     elif request.method == 'POST':
         products.delete()
         return redirect('index')
+
+
+def product_search(request):
+    query = request.GET.get('search')
+    products = Product.objects.filter(name__contains=query)
+    return render(request, 'index.html', context={
+        'products': products
+    })
+
+

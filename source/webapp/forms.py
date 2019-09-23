@@ -11,5 +11,5 @@ class ProductForm(forms.Form):
     price = forms.DecimalField(max_digits=7, decimal_places=2, label='Price', required=True)
 
 
-# class SearchForm(forms.Form):
-#     form = forms.CharField(max_length=40, label='Form', required=False)
+class SearchProduct(forms.Form):
+    search = forms.CharField(max_length=100, label='Search', required=False)
