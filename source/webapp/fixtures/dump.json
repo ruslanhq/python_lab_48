@@ -1,0 +1,86 @@
+[
+{
+  "model": "webapp.product",
+  "pk": 1,
+  "fields": {
+    "name": "Iphone",
+    "description": "best phone",
+    "category": "phone",
+    "count": 7,
+    "price": "46000.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 2,
+  "fields": {
+    "name": "asus",
+    "description": "notebook",
+    "category": "pc",
+    "count": 37,
+    "price": "40000.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 3,
+  "fields": {
+    "name": "canon",
+    "description": "best camera",
+    "category": "camera",
+    "count": 23,
+    "price": "70000.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 4,
+  "fields": {
+    "name": "ssd",
+    "description": "hard disk",
+    "category": "other",
+    "count": 5,
+    "price": "7000.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 5,
+  "fields": {
+    "name": "samsung",
+    "description": "galaxy s6",
+    "category": "phone",
+    "count": 6,
+    "price": "39800.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 6,
+  "fields": {
+    "name": "test",
+    "description": "",
+    "category": "other",
+    "count": 2,
+    "price": "36.12"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$qcwLQFqoOaI9$+wwxjqFE86X/8QR/gHUOVe8vDg/Ki2FFzGhON6D9Zt8=",
+    "last_login": "2019-09-19T14:18:32.145Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-09-19T13:31:15.955Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
