@@ -1,4 +1,12 @@
 {% extends 'base.html' %}
+{% block menu %}
+    <li class="nav-item">
+        <a href="{% url 'update' products.pk %}" class="nav-link">Update</a>
+    </li>
+    <li class="nav-item">
+        <a href="{% url 'delete' products.pk %}" class="nav-link">Delete</a>
+    </li>
+{% endblock %}
 {% block content %}
     <h1 class="my-3">{{ products.name }}</h1>
     <p>Category: {{ products.get_category_display }}</p>
