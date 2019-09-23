@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1 class="my-3">{{ products.name }}</h1>
+    <p>Category: {{ products.get_category_display }}</p>
+    <p>Price: {{ products.price }} сом</p>
+    <p>Amount: {{ products.count }} шт.</p>
+    <div class="pre">Description: {{ products.description }}</div>
+{% endblock %}
+
